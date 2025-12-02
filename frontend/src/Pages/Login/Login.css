@@ -1,0 +1,118 @@
+/* ============================= */
+/* CONTAINER PRINCIPAL */
+/* ============================= */
+.login-container {
+  background: linear-gradient(180deg, #000 0%, #0d0d0d 100%);
+  min-height: 100vh;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  animation: fadeIn 0.6s ease;
+}
+
+/* ============================= */
+/* TÍTULO */
+/* ============================= */
+.login-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ============================= */
+/* FORMULÁRIO */
+/* ============================= */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+/* ============================= */
+/* INPUTS */
+/* ============================= */
+.login-input {
+  background: #111;
+  border: 1px solid #222;
+  padding: 16px;
+  border-radius: 14px;
+  color: #fff;
+  font-size: 17px;
+  width: 100%;
+  transition: 0.2s ease-in-out;
+}
+
+.login-input:focus {
+  border-color: #fff;
+  background: #161616;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
+  outline: none;
+}
+
+/* ============================= */
+/* BOTÃO DE LOGIN */
+/* ============================= */
+.login-btn {
+  background: #fff;
+  color: #000;
+  font-weight: 700;
+  padding: 16px;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+  transition: 0.2s ease;
+  letter-spacing: 0.5px;
+}
+
+.login-btn:hover {
+  background: #e8e8e8;
+}
+
+.login-btn:active {
+  transform: scale(0.96);
+}
+
+/* ============================= */
+/* LINK PARA CADASTRO */
+/* ============================= */
+.login-link {
+  text-align: center;
+  margin-top: 28px;
+  color: #bbb;
+  font-size: 15px;
+}
+
+.login-link-btn {
+  color: #fff;
+  margin-left: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.login-link-btn:hover {
+  text-decoration: underline;
+}
+
+/* ============================= */
+/* ANIMAÇÕES */
+/* ============================= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

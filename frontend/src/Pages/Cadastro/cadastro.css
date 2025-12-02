@@ -1,0 +1,123 @@
+/* ------------------------------- */
+/*  TELA DE CADASTRO - MOBILE UI   */
+/* ------------------------------- */
+
+.cadastro-container {
+  background: #000;
+  min-height: 100vh;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #fff;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* TÍTULO */
+.cadastro-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 28px;
+  background: linear-gradient(90deg, #fff, #aaa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+}
+
+/* FORM */
+.cadastro-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* INPUT */
+.cadastro-input {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 16px;
+  border-radius: 14px;
+  color: #fff;
+  font-size: 15px;
+  width: 100%;
+  transition: all 0.25s ease;
+}
+
+.cadastro-input:focus {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.25);
+  outline: none;
+}
+
+/* 2 EM LINHA */
+.row {
+  display: flex;
+  gap: 14px;
+}
+
+/* BOTÃO */
+.cadastro-btn {
+  background: #fff;
+  color: #000;
+  font-weight: 700;
+  padding: 16px;
+  border-radius: 16px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.25s ease;
+}
+
+.cadastro-btn:hover {
+  background: #e8e8e8;
+}
+
+.cadastro-btn:active {
+  transform: scale(0.96);
+}
+
+/* LINK PARA LOGIN */
+.cadastro-link {
+  text-align: center;
+  margin-top: 22px;
+  font-size: 15px;
+  color: #bbb;
+}
+
+.cadastro-link-btn {
+  color: #fff;
+  margin-left: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.cadastro-link-btn:hover {
+  text-decoration: underline;
+}
+
+/* ANIMAÇÃO */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* MOBILE FRIENDLY */
+@media (max-width: 480px) {
+  .cadastro-title {
+    font-size: 28px;
+  }
+  
+  .cadastro-input {
+    font-size: 14px;
+    padding: 14px;
+  }
+
+  .cadastro-btn {
+    font-size: 16px;
+    padding: 14px;
+  }
+}
